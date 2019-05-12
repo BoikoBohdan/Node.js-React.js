@@ -1,0 +1,3 @@
+export const TESTREQUEST = 'TESTREQUEST'
+export const TESTSUCCESS = 'TESTSUCCESS'
+export const TESTERROR = 'TESTERROR'

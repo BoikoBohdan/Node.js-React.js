@@ -1,0 +1,45 @@
+.login__wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://picsum.photos/id/1079/1920/1280");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.login__main {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+}
+
+.login__paper {
+  display: flex;
+  padding: 16px 24px 24px;
+  align-items: center;
+  flex-direction: column;
+}
+.login__avatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25rem;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  user-select: none;
+  border-radius: 50%;
+  justify-content: center;
+  margin: 8px;
+  background-color: rgb(225, 0, 80);
+  color: #fff;
+}
+.login__form {
+  width: "100%";
+  margin-top: 10px;
+}
+.login__submit {
+  margin-top: 10px;
+}

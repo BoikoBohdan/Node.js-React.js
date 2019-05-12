@@ -17,7 +17,7 @@ const login = (req, res, next) => {
           }
           if (result) {
             const token = jwt.sign(
-              { email: user.email, id: user._id },
+              { email: user.email, id: user._id, role: user.role },
               'secret',
               { expiresIn: '2h' }
             )
@@ -49,7 +49,8 @@ const signup = (req, res, next) => {
             const user = new User({
               email: req.body.email,
               user_name: req.body.user_name,
-              password: hash
+              password: hash,
+              role: 1
             })
             user
               .save()
